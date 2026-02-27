@@ -1,0 +1,40 @@
+# Build output
+bin/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+
+# Docker files
+Dockerfile*
+.dockerignore
+
+# Package files
+*.ipk
+*.bin
+*.tar.gz
+
+# Configuration files that may contain sensitive information
+repositories.conf.bak
+
+# Keys directory (contains build keys)
+keys/
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# Backup files
+*.bak
+*~
