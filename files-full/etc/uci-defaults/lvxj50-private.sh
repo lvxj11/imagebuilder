@@ -3,8 +3,6 @@
 # 配置wan口
 # 配置为pppoe
 uci set network.wan.proto='pppoe'
-uci set network.wan.username='02209699406'
-uci set network.wan.password='699406'
 uci set network.wan.keepalive='5 5'
 # 提交修改
 uci commit network
