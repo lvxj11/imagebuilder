@@ -22,8 +22,6 @@ PACKAGES="curl openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn luci-i18n-firewall-zh-cn"
 # 推荐软件包
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
-# 推荐主题包
-PACKAGES="$PACKAGES luci-app-argon-config luci-i18n-argon-config-zh-cn"
 # 安装代理应用
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 
