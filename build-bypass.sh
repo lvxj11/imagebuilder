@@ -30,18 +30,13 @@ ARCH="x86_64"
 BRANCH="openwrt-24.10"
 REPOSITORY_URL="https://nikkinikki.pages.dev"
 FEED_URL="$REPOSITORY_URL/$BRANCH/$ARCH/nikki"
-# 1. 添加软件源到 repositories.conf
-echo "Adding nikki feed to repositories.conf..."
-# 检查是否已存在，避免重复添加
+echo "添加软件源到 repositories.conf..."
 sed -i '/nikki/d' repositories.conf
 echo "src/gz nikki $FEED_URL" >> repositories.conf
-# 2. 处理密钥 (关键步骤)
-echo "Downloading and adding build key..."
+echo "处理密钥..."
 mkdir -p keys
-# 公钥文件名必须为Packages.sig文件中的key值
 wget -O "keys/ab017c88aab7a08b" "$REPOSITORY_URL/key-build.pub"
-echo "Done! You can now build the image with nikki packages."
-# 3. 安装nikki
+echo "完成！现在可以安装nikki软件包了。"
 PACKAGES="$PACKAGES luci-i18n-nikki-zh-cn"
 
 # 开始生成镜像
